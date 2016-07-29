@@ -1,0 +1,13 @@
+2016 07 28  18:11:19 connectionpool.py[line:788] INFO Starting new HTTPS connection (1): web-api.london-demo.lmax.com
+2016 07 28  18:11:20 connectionpool.py[line:395] DEBUG "POST /public/security/login HTTP/1.1" 200 None
+2016 07 28  18:11:20 lmaxapi.py[line:45] INFO login OK
+2016 07 28  18:11:20 connectionpool.py[line:788] INFO Starting new HTTPS connection (1): web-api.london-demo.lmax.com
+2016 07 28  18:11:21 connectionpool.py[line:395] DEBUG "GET /secure/getApplicationParameters HTTP/1.1" 200 789
+2016 07 28  18:11:21 connectionpool.py[line:788] INFO Starting new HTTPS connection (1): web-api.london-demo.lmax.com
+2016 07 28  18:11:23 connectionpool.py[line:395] DEBUG "GET /secure/longPollKey HTTP/1.1" 200 84
+2016 07 28  18:11:23 connectionpool.py[line:788] INFO Starting new HTTPS connection (1): web-api.london-demo.lmax.com
+2016 07 28  18:11:35 connectionpool.py[line:395] DEBUG "POST /secure/subscribe HTTP/1.1" 200 69
+2016 07 28  18:11:35 connectionpool.py[line:788] INFO Starting new HTTPS connection (1): web-api.london-demo.lmax.com
+2016 07 28  18:11:36 connectionpool.py[line:395] DEBUG "POST /secure/subscribe HTTP/1.1" 200 69
+2016 07 28  18:11:36 connectionpool.py[line:788] INFO Starting new HTTPS connection (1): web-api.london-demo.lmax.com
+2016 07 28  18:11:37 connectionpool.py[line:395] DEBUG "POST /push/longPoll HTTP/1.1" 200 None
