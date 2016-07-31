@@ -1,27 +1,32 @@
-2016 07 29  14:36:25 lmaxapi.py[line:199] INFO login OK
-2016 07 29  14:36:26 lmaxapi.py[line:369] INFO [{u'paymentCardRegisterEnabled': [u'true'], u'searchOracles': [{u'$': u'', u'searchOracle': [{u'hasResults': [u'true'], u'term': [u'AUD', u'BRENT', u'CAD', u'CHF', u'CNH', u'CRUDE', u'CURRENCY', u'CZK', u'DKK', u'EUR', u'GAS', u'GBP', u'GOLD', u'HKD', u'HUF', u'ILS', u'JPY', u'MINI', u'MXN', u'NATURAL', u'NOK', u'NZD', u'PLN', u'RUB', u'SEK', u'SGD', u'SILVER', u'SPOT', u'TRY', u'UK', u'US', u'USD', u'USDM', u'XAG', u'XAU', u'XBR', u'XNG', u'XPD', u'XPT', u'XTI', u'ZAR'], u'group': [u'FX'], u'$': u''}, {u'hasResults': [u'true'], u'term': [u'100', u'200', u'225', u'30', u'35', u'40', u'50', u'500', u'AUS200', u'AUSTRALIA', u'EUROPE', u'FCHI', u'FRANCE', u'GDAXI', u'GDAXIM', u'GERMANY', u'HONG', u'HSI', u'INDEX', u'J225', u'JAPAN', u'KONG', u'MINI', u'NDX', u'NDXM', u'SPAIN', u'SPN35', u'SPX', u'SPXM', u'STOXX50E', u'STREET', u'TECH', u'UK', u'UK100', u'US', u'WALL', u'WS30', u'WS30M'], u'group': [u'INDICES'], u'$': u''}, {u'hasResults': [u'true'], u'term': [u'AUD', u'BRENT', u'COMMODITY', u'CRUDE', u'CURRENCY', u'EUR', u'GAS', u'GOLD', u'MINI', u'NATURAL', u'POST', u'PRT', u'RELEASE', u'SILVER', u'SPOT', u'TESTING', u'UK', u'US', u'USD', u'USDM', u'XAG', u'XAU', u'XBR', u'XNG', u'XPD', u'XPT', u'XTI'], u'group': [u'COMMODITIES'], u'$': u''}, {u'hasResults': [u'true'], u'term': [u'100', u'200', u'225', u'30', u'35', u'40', u'50', u'500', u'AUD', u'AUS200', u'AUSTRALIA', u'BRENT', u'CAD', u'CHF', u'CNH', u'COMMODITY', u'CRUDE', u'CURRENCY', u'CZK', u'DKK', u'EUR', u'EUROPE', u'FCHI', u'FRANCE', u'GAS', u'GBP', u'GDAXI', u'GDAXIM', u'GERMANY', u'GOLD', u'HKD', u'HONG', u'HSI', u'HUF', u'ILS', u'INDEX', u'J225', u'JAPAN', u'JPY', u'KONG', u'MINI', u'MXN', u'NATURAL', u'NDX', u'NDXM', u'NOK', u'NZD', u'PLN', u'POST', u'PRT', u'RELEASE', u'RUB', u'SEK', u'SGD', u'SILVER', u'SPAIN', u'SPN35', u'SPOT', u'SPX', u'SPXM', u'STOXX50E', u'STREET', u'TECH', u'TESTING', u'TRY', u'UK', u'UK100', u'US', u'USD', u'USDM', u'WALL', u'WS30', u'WS30M', u'XAG', u'XAU', u'XBR', u'XNG', u'XPD', u'XPT', u'XTI', u'ZAR'], u'group': [u'ALL'], u'$': u''}]}], u'$': u'', u'paymentCardRemoveEnabled': [u'true'], u'portalUrl': [u'https://account.london-demo.lmax.com/'], u'paymentCardWithdrawEnabled': [u'true'], u'dailyHighAndLowColumnsEnabled': [u'false'], u'liveLogonEnabled': [u'false'], u'demoTopUpEnabled': [u'true'], u'demoRegistrationEnabled': [u'true'], u'brandName': [u'LMAX Exchange'], u'liveRegistrationPage': [u'salesforce'], u'demoLogonEnabled': [u'true'], u'liveRegistrationEnabled': [u'false'], u'orderHistoryDownloadLimit': [u'10000'], u'paymentCardDepositEnabled': [u'true'], u'accountTransactionsDownloadLimit': [u'10000'], u'contactUrl': [u'http://cn.lmax.com/cn-contact'], u'lmaxBranding': [u'']}]
-2016 07 29  14:36:28 lmaxapi.py[line:256] INFO 4001   EUR/USD
-2016 07 29  14:36:28 lmaxapi.py[line:256] INFO 4004   USD/JPY
-2016 07 29  14:36:28 lmaxapi.py[line:256] INFO 4002   GBP/USD
-2016 07 29  14:36:28 lmaxapi.py[line:256] INFO 4013   USD/CAD
-2016 07 29  14:36:28 lmaxapi.py[line:256] INFO 4007   AUD/USD
-2016 07 29  14:36:28 lmaxapi.py[line:256] INFO 100637   XAU/USD
-2016 07 29  14:36:28 lmaxapi.py[line:256] INFO 4006   EUR/JPY
-2016 07 29  14:36:28 lmaxapi.py[line:256] INFO 4005   GBP/JPY
-2016 07 29  14:36:28 lmaxapi.py[line:256] INFO 4003   EUR/GBP
-2016 07 29  14:36:28 lmaxapi.py[line:256] INFO 100613   NZD/USD
-2016 07 29  14:36:28 lmaxapi.py[line:256] INFO 100525   EUR/SEK
-2016 07 29  14:36:28 lmaxapi.py[line:256] INFO 100541   USD/TRY
-2016 07 29  14:36:28 lmaxapi.py[line:256] INFO 4010   USD/CHF
-2016 07 29  14:36:28 lmaxapi.py[line:256] INFO 4016   EUR/AUD
-2016 07 29  14:36:28 lmaxapi.py[line:256] INFO 100507   USD/MXN
-2016 07 29  14:36:28 lmaxapi.py[line:256] INFO 100535   USD/SGD
-2016 07 29  14:36:28 lmaxapi.py[line:256] INFO 100509   EUR/NOK
-2016 07 29  14:36:28 lmaxapi.py[line:256] INFO 4011   EUR/CHF
-2016 07 29  14:36:28 lmaxapi.py[line:256] INFO 100517   GBP/NZD
-2016 07 29  14:36:28 lmaxapi.py[line:256] INFO 4017   GBP/AUD
-2016 07 29  14:36:28 lmaxapi.py[line:256] INFO 100097   GDAXI
-2016 07 29  14:36:28 lmaxapi.py[line:256] INFO 110097   GDAXIm
-2016 07 29  14:36:28 lmaxapi.py[line:256] INFO 100093   SPX
-2016 07 29  14:36:28 lmaxapi.py[line:256] INFO 110093   SPXm
-2016 07 29  14:36:28 lmaxapi.py[line:256] INFO 100091   WS30
+2016 07 29  21:04:14 lmaxapi.py[line:199] INFO login OK
+2016 07 29  21:04:15 lmaxapi.py[line:371] INFO [{u'paymentCardRegisterEnabled': [u'true'], u'searchOracles': [{u'$': u'', u'searchOracle': [{u'hasResults': [u'true'], u'term': [u'AUD', u'BRENT', u'CAD', u'CHF', u'CNH', u'CRUDE', u'CURRENCY', u'CZK', u'DKK', u'EUR', u'GAS', u'GBP', u'GOLD', u'HKD', u'HUF', u'ILS', u'JPY', u'MINI', u'MXN', u'NATURAL', u'NOK', u'NZD', u'PLN', u'RUB', u'SEK', u'SGD', u'SILVER', u'SPOT', u'TRY', u'UK', u'US', u'USD', u'USDM', u'XAG', u'XAU', u'XBR', u'XNG', u'XPD', u'XPT', u'XTI', u'ZAR'], u'group': [u'FX'], u'$': u''}, {u'hasResults': [u'true'], u'term': [u'100', u'200', u'225', u'30', u'35', u'40', u'50', u'500', u'AUS200', u'AUSTRALIA', u'EUROPE', u'FCHI', u'FRANCE', u'GDAXI', u'GDAXIM', u'GERMANY', u'HONG', u'HSI', u'INDEX', u'J225', u'JAPAN', u'KONG', u'MINI', u'NDX', u'NDXM', u'SPAIN', u'SPN35', u'SPX', u'SPXM', u'STOXX50E', u'STREET', u'TECH', u'UK', u'UK100', u'US', u'WALL', u'WS30', u'WS30M'], u'group': [u'INDICES'], u'$': u''}, {u'hasResults': [u'true'], u'term': [u'AUD', u'BRENT', u'COMMODITY', u'CRUDE', u'CURRENCY', u'EUR', u'GAS', u'GOLD', u'MINI', u'NATURAL', u'POST', u'PRT', u'RELEASE', u'SILVER', u'SPOT', u'TESTING', u'UK', u'US', u'USD', u'USDM', u'XAG', u'XAU', u'XBR', u'XNG', u'XPD', u'XPT', u'XTI'], u'group': [u'COMMODITIES'], u'$': u''}, {u'hasResults': [u'true'], u'term': [u'100', u'200', u'225', u'30', u'35', u'40', u'50', u'500', u'AUD', u'AUS200', u'AUSTRALIA', u'BRENT', u'CAD', u'CHF', u'CNH', u'COMMODITY', u'CRUDE', u'CURRENCY', u'CZK', u'DKK', u'EUR', u'EUROPE', u'FCHI', u'FRANCE', u'GAS', u'GBP', u'GDAXI', u'GDAXIM', u'GERMANY', u'GOLD', u'HKD', u'HONG', u'HSI', u'HUF', u'ILS', u'INDEX', u'J225', u'JAPAN', u'JPY', u'KONG', u'MINI', u'MXN', u'NATURAL', u'NDX', u'NDXM', u'NOK', u'NZD', u'PLN', u'POST', u'PRT', u'RELEASE', u'RUB', u'SEK', u'SGD', u'SILVER', u'SPAIN', u'SPN35', u'SPOT', u'SPX', u'SPXM', u'STOXX50E', u'STREET', u'TECH', u'TESTING', u'TRY', u'UK', u'UK100', u'US', u'USD', u'USDM', u'WALL', u'WS30', u'WS30M', u'XAG', u'XAU', u'XBR', u'XNG', u'XPD', u'XPT', u'XTI', u'ZAR'], u'group': [u'ALL'], u'$': u''}]}], u'$': u'', u'paymentCardRemoveEnabled': [u'true'], u'portalUrl': [u'https://account.london-demo.lmax.com/'], u'paymentCardWithdrawEnabled': [u'true'], u'dailyHighAndLowColumnsEnabled': [u'false'], u'liveLogonEnabled': [u'false'], u'demoTopUpEnabled': [u'true'], u'demoRegistrationEnabled': [u'true'], u'brandName': [u'LMAX Exchange'], u'liveRegistrationPage': [u'salesforce'], u'demoLogonEnabled': [u'true'], u'liveRegistrationEnabled': [u'false'], u'orderHistoryDownloadLimit': [u'10000'], u'paymentCardDepositEnabled': [u'true'], u'accountTransactionsDownloadLimit': [u'10000'], u'contactUrl': [u'http://cn.lmax.com/cn-contact'], u'lmaxBranding': [u'']}]
+2016 07 29  21:04:18 lmaxapi.py[line:256] INFO 4001   EUR/USD
+2016 07 29  21:04:18 lmaxapi.py[line:256] INFO 4004   USD/JPY
+2016 07 29  21:04:18 lmaxapi.py[line:256] INFO 4002   GBP/USD
+2016 07 29  21:04:18 lmaxapi.py[line:256] INFO 4013   USD/CAD
+2016 07 29  21:04:18 lmaxapi.py[line:256] INFO 4007   AUD/USD
+2016 07 29  21:04:18 lmaxapi.py[line:256] INFO 100637   XAU/USD
+2016 07 29  21:04:18 lmaxapi.py[line:256] INFO 4006   EUR/JPY
+2016 07 29  21:04:18 lmaxapi.py[line:256] INFO 4005   GBP/JPY
+2016 07 29  21:04:18 lmaxapi.py[line:256] INFO 4003   EUR/GBP
+2016 07 29  21:04:18 lmaxapi.py[line:256] INFO 100613   NZD/USD
+2016 07 29  21:04:18 lmaxapi.py[line:256] INFO 100525   EUR/SEK
+2016 07 29  21:04:18 lmaxapi.py[line:256] INFO 100541   USD/TRY
+2016 07 29  21:04:18 lmaxapi.py[line:256] INFO 4010   USD/CHF
+2016 07 29  21:04:18 lmaxapi.py[line:256] INFO 4016   EUR/AUD
+2016 07 29  21:04:18 lmaxapi.py[line:256] INFO 100507   USD/MXN
+2016 07 29  21:04:18 lmaxapi.py[line:256] INFO 100535   USD/SGD
+2016 07 29  21:04:18 lmaxapi.py[line:256] INFO 100509   EUR/NOK
+2016 07 29  21:04:18 lmaxapi.py[line:256] INFO 4011   EUR/CHF
+2016 07 29  21:04:18 lmaxapi.py[line:256] INFO 100517   GBP/NZD
+2016 07 29  21:04:18 lmaxapi.py[line:256] INFO 4017   GBP/AUD
+2016 07 29  21:04:18 lmaxapi.py[line:256] INFO 100097   GDAXI
+2016 07 29  21:04:18 lmaxapi.py[line:256] INFO 110097   GDAXIm
+2016 07 29  21:04:18 lmaxapi.py[line:256] INFO 100093   SPX
+2016 07 29  21:04:18 lmaxapi.py[line:256] INFO 110093   SPXm
+2016 07 29  21:04:18 lmaxapi.py[line:256] INFO 100091   WS30
+2016 07 29  21:05:02 lmaxapi.py[line:22] INFO ('BUY BUY SELL : ', -0.006659400000003757, ' = ', 1.11574, ' * ', 102.69, ' - ', 114.582)
+2016 07 29  21:05:04 lmaxapi.py[line:22] INFO 0.008453
+2016 07 29  21:08:54 lmaxapi.py[line:22] INFO ('SELL SELL BUY : ', 0.004721320000001583, ' = ', 1.11534, ' * ', 102.798, ' - ', 114.65)
+2016 07 29  21:08:55 lmaxapi.py[line:22] INFO 0.011568
+2016 07 29  21:13:20 lmaxapi.py[line:327] INFO post_request failed

@@ -3,31 +3,66 @@
 from application.lmaxapi import *
 import ast
 import time
-
+import multiprocessing
+import os, random
 username = "ipenny12"
 password = "wm150696"
 type = "CFD_DEMO"
 
+
+api = lmaxapi()
+api.login(username,password,type)
+api.get_longpollkey()
+
+api.search_instruments()
+
+api.setup_subscription("order")
+api.subscribe_to_orderbook([4001,4004,4006])
+
+
+def place_order_1_buy():
+    order_id = api.place_order(4001, order_type.market, fill_strategy.IoC, 0.8)
+
+
+def place_order_1_sell():
+    order_id = api.place_order(4001, order_type.market, fill_strategy.IoC, -0.8)
+
+
+def place_order_2_buy():
+    order_id = api.place_order(4004, order_type.market, fill_strategy.IoC, 0.8)
+
+
+def place_order_2_sell():
+    order_id = api.place_order(4004, order_type.market, fill_strategy.IoC, -0.8)
+
+
+def place_order_3_buy():
+    order_id = api.place_order(4006, order_type.market, fill_strategy.IoC, 0.8)
+
+def place_order_3_sell():
+    order_id = api.place_order(4006, order_type.market, fill_strategy.IoC, -0.8)
+
+def poolssb():
+    pool = multiprocessing.Pool(3)
+    pool.apply_async(place_order_1_sell)
+    pool.apply_async(place_order_2_sell)
+    pool.apply_async(place_order_3_buy)
+    pool.close()
+    pool.join()
+
+def poolbbs():
+    pool = multiprocessing.Pool(3)
+    pool.apply_async(place_order_1_buy)
+    pool.apply_async(place_order_2_buy)
+    pool.apply_async(place_order_3_sell)
+    pool.close()
+    pool.join()
+
 def main():
-    api = lmaxapi()
-    api.login(username,password,type)
-    api.get_longpollkey()
-
-    api.search_instruments()
-
-    api.setup_subscription("order")
-    api.subscribe_to_orderbook([4001,4004,4006])
-    # 4001   EUR/USD
-    # 4002   GBP/USD
-    # 4003   EUR/GBP
-    # 4004   USD/JPY
-    # 4006   EUR/JPY
     print "get data start"
-    #order_id = api.place_order(4003, order_type.market, fill_strategy.IoC,-1) # send order
-    #order_id = api.close_order(4001,"AAAESQAAAAAE56oN", 1)
-    
     while(1):
         result = api.get_events()
+
         if result:
             price = {}
             for update in result:
@@ -45,24 +80,18 @@ def main():
                         t0 = time.clock()
                         str = "SELL SELL BUY : ",v," = ",price["4001"][1]," * ",price["4004"][1]," - ",price["4006"][0]
                         log(str)
-                        api.place_order(4001, order_type.market, fill_strategy.IoC, -0.8)
-                        api.place_order(4004, order_type.market, fill_strategy.IoC, -0.8)
-                        api.place_order(4006, order_type.market, fill_strategy.IoC, 0.8)
+                        poolssb()
                         t1 = time.clock()
                         log(t1 - t0)
                     if k < 0:
                         t0 = time.clock()
                         str = "BUY BUY SELL : ", k," = ",price["4001"][0]," * ",price["4004"][0]," - ",price["4006"][1]
                         log(str)
-                        api.place_order(4001, order_type.market, fill_strategy.IoC, 0.8)
-                        api.place_order(4004, order_type.market, fill_strategy.IoC, 0.8)
-                        api.place_order(4006, order_type.market, fill_strategy.IoC, -0.8)
+                        poolbbs()
                         t1 = time.clock()
                         log(t1 - t0)
 
     #api.search_instruments()
-
-
 
 
 if __name__ == "__main__":

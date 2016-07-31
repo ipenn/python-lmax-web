@@ -320,9 +320,11 @@ class lmaxapi():
 
         if self.sequence_no != False:
             http_header['lastReceivedMessageSequence'] = self.sequence_no
-
-        r = requests.post(self.url + path, data=data, cookies=self.cookies , headers=http_header)
-        return r
+        try:
+            r = requests.post(self.url + path, data=data, cookies=self.cookies , headers=http_header)
+            return r
+        except:
+            logging.info("post_request failed")
 
     def post_login(self,path,data):
         http_header = self.http_std_headers
